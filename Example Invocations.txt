@@ -1,0 +1,89 @@
+Please check the formats defined here carefully.
+If your program does not conform to the formats defined here,
+then points may be deducted from your project grade.
+
+
+===================================================================
+Example output
+
+$ make
+...
+$ ./sort.exe input.1 -o
+12 318 95 0 -100 3 27 55
+Thread 1 finished stage 1 phase 1
+Thread 2 finished stage 1 phase 1
+Thread 3 finished stage 1 phase 1
+Thread 4 finished stage 1 phase 1
+12 27 3 -100 0 95 318 55
+Thread 1 finished stage 1 phase 2
+Thread 2 finished stage 1 phase 2
+Thread 3 finished stage 1 phase 2
+Thread 4 finished stage 1 phase 2
+-100 3 27 12 0 95 318 55
+Thread 1 finished stage 1 phase 3
+Thread 2 finished stage 1 phase 3
+Thread 3 finished stage 1 phase 3
+Thread 4 finished stage 1 phase 3
+-100 3 12 27 0 95 55 318
+Thread 1 finished stage 2 phase 1
+Thread 2 finished stage 2 phase 1
+Thread 3 finished stage 2 phase 1
+Thread 4 finished stage 2 phase 1
+-100 3 12 0 27 95 55 318
+Thread 1 finished stage 2 phase 2
+Thread 2 finished stage 2 phase 2
+Thread 3 finished stage 2 phase 2
+Thread 4 finished stage 2 phase 2
+-100 3 12 0 27 55 95 318
+Thread 1 finished stage 2 phase 3
+Thread 2 finished stage 2 phase 3
+Thread 3 finished stage 2 phase 3
+Thread 4 finished stage 2 phase 3
+-100 3 0 12 27 55 95 318
+Thread 1 finished stage 3 phase 1
+Thread 2 finished stage 3 phase 1
+Thread 3 finished stage 3 phase 1
+Thread 4 finished stage 3 phase 1
+-100 3 0 12 27 55 95 318
+Thread 1 finished stage 3 phase 2
+Thread 2 finished stage 3 phase 2
+Thread 3 finished stage 3 phase 2
+Thread 4 finished stage 3 phase 2
+-100 0 3 12 27 55 95 318
+Thread 1 finished stage 3 phase 3
+Thread 2 finished stage 3 phase 3
+Thread 3 finished stage 3 phase 3
+Thread 4 finished stage 3 phase 3
+-100 0 3 12 27 55 95 318
+-100 0 3 12 27 55 95 318
+------------------------------
+1000 100 1234 123
+Thread 1 finished stage 1 phase 1
+Thread 2 finished stage 1 phase 1
+123 100 1234 1000
+Thread 1 finished stage 1 phase 2
+Thread 2 finished stage 1 phase 2
+100 123 1000 1234
+Thread 1 finished stage 2 phase 1
+Thread 2 finished stage 2 phase 1
+100 123 1000 1234
+Thread 1 finished stage 2 phase 2
+Thread 2 finished stage 2 phase 2
+100 123 1000 1234
+------------------------------
+112 15 31 958 101 -10 101010 30
+233 50 201 9 108 99 567 88
+...
+
+
+$ ./sort.exe input.1 -r
+12 318 95 0 -100 3 27 55
+-100 0 3 12 27 55 95 318
+------------------------------
+1000 100 1234 123
+100 123 1000 1234 
+------------------------------
+112 15 31 958 101 -10 101010 30
+233 50 201 9 108 99 567 88
+...
+
